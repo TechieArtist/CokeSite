@@ -126,21 +126,7 @@ section{
   left: 0;
 }
 
-/* ---------- SPEECH BUBBLE ---------- */
 
-.speechbubble{
-    position:absolute;
-    top:280px;
-    left:45%;
-    transform:translateX(-50%);
-    width:min(18vw,220px);
-    z-index:6;
-}
-
-.speechbubble img{
-    width:100%;
-    height:auto;
-}
 
 
 
