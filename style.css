@@ -34,18 +34,7 @@ html, body {
 
 /* ---------- VIDEO ---------- */
 
-.mountain{
-    position:absolute;
-    top:160px;
-    left:50%;
-    transform:translateX(-50%);
-    width:min(80vw,1000px);
-    z-index:1;
-}
-
-.mountain video{
-    width:100%;
-    height:auto;
+.video{
 }
 
 /* ===== HEADER ===== */
@@ -239,10 +228,6 @@ section{
 
 
 
-.mountain{
-    width:100vw;
-    top:120px;
-}
 
 
 }
