@@ -8,23 +8,7 @@
 }
 
 
-html, body {
-    background-image: url('Theresa.png'); /* Add your image as the background */
-    background-size: cover; /* Cover the entire page */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    font-family: "Poppins", sans-serif;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100vh; /* Makes sure the body covers the full viewport height */
-    width: 100vw; /* Ensures the body covers the full viewport width */
-    overflow-x: hidden; /* Prevents horizontal scroll */
-    background-color: #000000;
-    font-size: 16px; /* Adjust base font size */
-    line-height: 1.6; /* Adjust line 
-    
+
     
     
     /* ---------- VIDEO ---------- */
@@ -160,7 +144,28 @@ section{
 /* ---------- MOBILE ---------- */
 
 
-@media (max-width: 1040px){
+/* Style for the mobile GIF */
+.mobile-gif {
+  display: none; /* Hide it by default */
+  position: absolute; /* Position the GIF absolutely */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the full width of the .home section */
+  height: 100%; /* Cover the full height of the .home section */
+  background-image: url('Bar.gif'); /* Set the background GIF */
+  background-size: cover; /* Ensure the background covers the div */
+  background-position: center; /* Center the background image */
+  z-index: 1; /* Ensure the GIF is behind all other content */
+}
+/* Media query for devices with a maximum width of 768px */
+@media (max-width: 768px) {
+  .mobile-gif {
+      display: block; /* Show the GIF background div on mobile */
+  }
+
+}
+
+/*@media (max-width: 1040px){
         
     
     .coke2{
@@ -180,7 +185,7 @@ section{
       max-width:100%;
 
   }
-
+*/
 
     
     header{
