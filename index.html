@@ -34,10 +34,7 @@
     <i class="fa-solid fa-bars fa-2xl" id="menuIcon"></i>
     
     
-
-
-    <!-- Script -->
-    <script src="script.js"></script>
+    
 
    <!-- <section class="container">
         <div class="slider-wrapper">
@@ -65,17 +62,19 @@
         
     </div> 
 
-    <div class="speechbubble" id="speechbubble">
-    <img src="png-clipart-manga-speech-bubbles-white-speech-balloon.png" alt="">
+   <!-- Script -->
+<script src="app.js"></script>
 
-    
-</div>
+<script type="text/javascript">
+  //Javacript for responsive navigation menu
+  const menuBtn = document.querySelector(".menu-btn");
+  const navigation = document.querySelector(".navigation");
 
-<div class="yummy" id="yummy">
-    <h1>おいしい</h1>
-
-</div>
-
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");
+  });
+  </script>
 </body>
 </html>
 
