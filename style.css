@@ -23,19 +23,32 @@ html, body {
     overflow-x: hidden; /* Prevents horizontal scroll */
     background-color: #000000;
     font-size: 16px; /* Adjust base font size */
-    line-height: 1.6; /* Adjust line height */
-  }
+    line-height: 1.6; /* Adjust line 
+    
+    
+    
+    /* ---------- VIDEO ---------- */
 
-
-
-
-
-
-
-/* ---------- VIDEO ---------- */
-
-.video{
+.coke2{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:140px;     /* room for header */
+    padding-bottom:60px;
 }
+
+.coke2 video{
+    width:70%;
+    max-width:900px;
+    height:auto;
+
+    border-radius:8px;
+    object-fit:contain;
+}
+
+
+
 
 /* ===== HEADER ===== */
 
@@ -148,7 +161,29 @@ section{
 
 
 @media (max-width: 1040px){
-  header{
+        
+    
+    .coke2{
+
+      padding-top:100px;
+
+      padding-left:20px;
+
+      padding-right:20px;
+
+  }
+
+  .coke2 video{
+
+      width:100%;
+
+      max-width:100%;
+
+  }
+
+
+    
+    header{
     padding: 12px 20px;
   }
 
