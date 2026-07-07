@@ -142,21 +142,6 @@ section{
     height:auto;
 }
 
-/* ---------- JAPANESE TEXT ---------- */
-
-.yummy{
-    position:absolute;
-    top:365px;
-    left:45%;
-    transform:translateX(-50%);
-    z-index:7;
-}
-
-.yummy h1{
-    color:#000;
-    font-size:clamp(1.2rem,2vw,2rem);
-    font-weight:500;
-}
 
 
 
@@ -273,17 +258,5 @@ section{
     top:120px;
 }
 
-.speechbubble{
-    width:45vw;
-    top:240px;
-    left:48%;
-}
-
-.yummy{
-    top:295px;
-    left:48%;
-}
-
-}
 
 }
