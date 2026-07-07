@@ -1,115 +1,191 @@
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@200;300;400;500;600;700&display=swap');
-</style>
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@200;300;400;500;600;700&display=swap');
 
-{
-    box-sizing: border-box;
- margin: 0;
- padding:0;
-    font-family: 'Hahmlet', serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Hahmlet',serif;
 }
 
-html, body {
-    background-image: url('Whiteroom.jpg'); /* Add your image as the background */
-    background-size: cover; /* Cover the entire page */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    font-family: "Poppins", sans-serif;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100vh; /* Makes sure the body covers the full viewport height */
-    width: 100vw; /* Ensures the body covers the full viewport width */
-    overflow-x: hidden; /* Prevents horizontal scroll */
-    background-color: #000000;
-    font-size: 16px; /* Adjust base font size */
-    line-height: 1.6; /* Adjust line height */
-  }
+html,
+body{
+    width:100%;
+    min-height:100vh;
+    overflow-x:hidden;
 
-
-.showcase {
-    position: absolute
-    top: 0%;
-    width: 300%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: : center;
-    background: #fff;
-   
+    background-image:url("Whiteroom.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:#000;
 }
 
-.mascot {
-    position: absolute;
-    left: 67%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-}    
+/* ---------- RED BAR ---------- */
 
-.social {
-        position: absolute;
-        top: 220px;
-        right: ;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: :right;
-    
-
+.rectangle1{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100px;
+    background:#ea0e0e;
+    z-index:1000;
 }
 
-.menu {
-    position: absolute;
-    top: 0;
-    left: 10%;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
+/* ---------- MAIN IMAGE ---------- */
 
-    align-items: center;
-    z-index: 1000;
-    font: 50px 'Hahmlet', serif;
+.image-container{
+    position:relative;
+    width:min(90vw,900px);
+    margin:120px auto 0 auto;
 }
 
-.logo {
-    position: absolute;
-    left: 67%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
+.image-container img{
+    width:100%;
+    height:auto;
+    display:block;
 }
 
-.moutain {
-    position: absolute;
-    left: 70%;
-    right: ;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+/* ---------- COCA COLA LOGO ---------- */
+
+.logo{
+    position:absolute;
+    top:25px;
+    left:50%;
+    transform:translateX(-50%);
+    width:min(45vw,420px);
+    z-index:5;
 }
 
-.text {
-    position: absolute;
-    left: 0%;
-    right: ;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+.logo img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/* ---------- VIDEO ---------- */
+
+.mountain{
+    position:absolute;
+    top:160px;
+    left:50%;
+    transform:translateX(-50%);
+    width:min(80vw,1000px);
+    z-index:1;
+}
+
+.mountain video{
+    width:100%;
+    height:auto;
+}
+
+/* ---------- SPEECH BUBBLE ---------- */
+
+.speechbubble{
+    position:absolute;
+    top:280px;
+    left:45%;
+    transform:translateX(-50%);
+    width:min(18vw,220px);
+    z-index:6;
+}
+
+.speechbubble img{
+    width:100%;
+    height:auto;
+}
+
+/* ---------- JAPANESE TEXT ---------- */
+
+.yummy{
+    position:absolute;
+    top:365px;
+    left:45%;
+    transform:translateX(-50%);
+    z-index:7;
+}
+
+.yummy h1{
+    color:#000;
+    font-size:clamp(1.2rem,2vw,2rem);
+    font-weight:500;
+}
+
+/* ---------- SIDEBAR ---------- */
+
+#menuIcon{
+    position:fixed;
+    top:50px;
+    left:20px;
+    z-index:2000;
+    color:#fff;
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:-260px;
+    width:250px;
+    height:100vh;
+    background:#111;
+    transition:.3s;
+    z-index:1500;
+}
+
+.sidebar.active{
+    left:0;
+}
+
+/* ---------- SECOND VIDEO ---------- */
+
+.coke2{
+    display:flex;
+    justify-content:center;
+    margin:80px auto;
+}
+
+.coke2 video{
+    width:min(90vw,600px);
+    height:auto;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:768px){
+
+.rectangle1{
+    height:70px;
+}
+
+.logo{
+    width:60vw;
+    top:15px;
+}
+
+.image-container{
+    width:100vw;
+    margin-top:70px;
+}
+
+.mountain{
+    width:100vw;
+    top:120px;
+}
+
+.speechbubble{
+    width:45vw;
+    top:240px;
+    left:48%;
+}
+
+.yummy{
+    top:295px;
+    left:48%;
+}
+
+#menuIcon{
+    top:35px;
+    left:15px;
+}
+
 }
